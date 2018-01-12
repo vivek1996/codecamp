@@ -18,3 +18,11 @@
   .card .card-action a:hover{
       opacity: 0.5;
   }
+  /* .btn-flat{
+      background-color: cornflowerblue !important;
+  } */
+  .divider {
+    height: 2px !important;
+    overflow: hidden;
+    background-color: #7bb2e8 !important;
+}
