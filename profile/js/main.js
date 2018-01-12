@@ -1,9 +1,9 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $("p").addClass("flow-text");
     $('.sidenav').sidenav({
-       
-        draggable : true
+
+        draggable: true
     });
     $('.scrollspy').scrollSpy();
 
-  });
+});

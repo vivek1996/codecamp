@@ -1,27 +1,33 @@
-*{
+* {
     font-family: 'Comfortaa', cursive;
 }
+
 .table-of-contents a:hover {
     color: #a8a8a8 !important;
     padding-left: 15px !important;
     border-left: 1px solid #101c8a !important;
 }
+
 .table-of-contents a.active {
     font-weight: 500 !important;
     padding-left: 18px !important;
     border-left: 2px solid #005ba5 !important;
-  }
+}
 
-  .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-     color: #096dca !important; 
-  }
-  .card .card-action a:hover{
-      opacity: 0.5;
-  }
-  /* .btn-flat{
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #096dca !important;
+}
+
+.card .card-action a:hover {
+    opacity: 0.5;
+}
+
+
+/* .btn-flat{
       background-color: cornflowerblue !important;
   } */
-  .divider {
+
+.divider {
     height: 2px !important;
     overflow: hidden;
     background-color: #7bb2e8 !important;
