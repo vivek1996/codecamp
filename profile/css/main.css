@@ -12,6 +12,7 @@
     font-weight: 500 !important;
     padding-left: 18px !important;
     border-left: 2px solid #005ba5 !important;
+    color: teal !important;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
