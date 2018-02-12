@@ -1,7 +1,11 @@
 /* * {
     font-family: 'Comfortaa', cursive;
 } */
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
+html{
+    font-family: 'Lato', sans-serif;
+}
 .table-of-contents a:hover {
     color: #a8a8a8 !important;
     padding-left: 15px !important;
