@@ -16,7 +16,7 @@
 <body>
     <div class=" container">
         <h1 class=" center">
-            <i class="fa fa-quote-left" aria-hidden="true"></i> &nbsp; Random Quotes&nbsp;
+            <i class="fa fa-quote-left" aria-hidden="true"></i> Random Quotes
             <i class="fa fa-quote-right" aria-hidden="true"></i>
         </h1>
 
@@ -26,38 +26,43 @@
             <div class="row ">
                 <div class="col s12">
                     <div class="card-panel">
-                        <span id="quote" class=" flow-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, sint.
+                        <span id="quote" class=" flow-text ">
                         </span>
-                        <p class="author right-align black-text">-Lorem, ipsum.</p>
+                        <p class="author right-align black-text"></p>
                         <div class="row">
                             <div class="col s6 share-icons">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <a href="https://twitter.com/intent/tweet">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
+
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+
 
                             </div>
 
+                        </div>
+                        <div class=" center">
+                            <a class=" btn  btn-small pink">
+                                Get quote
+                                <i class="fa fa-send" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
+        <footer class="footer-copyright">
+            <div class="container grey-text">
+                With Lots of
+                <i class="fa fa-heart pink-text" aria-hidden="true"></i> from Vivek
+                <a class="grey-text right" href="https://www.bit.ly/vivek_m">Visit Profile</a>
+            </div>
+        </footer>
     </div>
     <canvas class="background"></canvas>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-<script>
-    var particles = Particles.init({
-        selector: '.background',
-        color: ['#08d9d6', '#ff2e63', '#eaeaea'],
-        sizeVariations: 5,
-        speed: 0.8
-    });
-</script>
+<script src="js/main.js"></script>
 
 </html>
