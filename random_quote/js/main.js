@@ -1,3 +1,24 @@
+var msg;
+function getQuote() {
+  $.getJSON(
+    "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
+    function(data) {
+      $("#quote").html(data[0].content);
+      $(".author").html(data[0].title);
+      msg = data[0].content;
+      msg = msg.replace(/<p>/g, "");
+      msg = msg.replace(/<\/p>/g, "");
+      msg = msg.replace(/ /g, "%20");
+      var url = `https://twitter.com/intent/tweet?text=${msg}`;
+
+      $("#twitterUrl").attr("href", url);
+    }
+  );
+}
+$(".btn").on("click", function() {
+  getQuote();
+});
+
 $(document).ready(function() {
   Particles.init({
     selector: ".background",
@@ -9,25 +30,6 @@ $(document).ready(function() {
   getQuote();
 });
 
-function getQuote() {
-  $.getJSON(
-    "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
-    function(data) {
-      console.log(data[0]);
-      $("#quote").html(data[0].content);
-      $(".author").html(data[0].title);
-      var msg = data[0].content;
-      msg = msg.replace(/ /g, "%20");
-      console.log(msg);
-    }
-  );
-}
-$(".btn").on("click", function() {
-  getQuote();
-});
-$(".fa-twitter").on("click", function() {
-  window.open(
-    `https://twitter.com/intent/tweet?text=${data[0].content}`,
-    blank
-  );
-});
+// $(".fa-twitter").on("click", function() {
+//   window.open(`https://twitter.com/intent/tweet?text=${msg}`, "_blank");
+// });
