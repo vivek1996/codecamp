@@ -21,7 +21,7 @@ function getQuote() {
       "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
     success: function(data) {
       var post = data.shift();
-      console.log(post);
+      // console.log(post);
       $("#quote").html(post.content);
       $(".author").html(post.title);
       msg = post.content;
