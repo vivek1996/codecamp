@@ -5,7 +5,6 @@ function getQuote() {
       'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
     success(data) {
       const post = data.shift();
-      // console.log(post);
       $('#quote').html(post.content);
       $('.author').html(post.title);
       msg = post.content;
