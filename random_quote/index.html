@@ -11,6 +11,23 @@
     <!--Import Font Awesome Icon Font-->
     <script src="https://use.fontawesome.com/a80662cbbd.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Manifest json -->
+    <link rel="manifest" href="manifest.json"></link>
+    <script src="js/manup.js"></script>
+    <script>
+        if (navigator.serviceWorker.controller) {
+            console.log('Active service worker found, no need to register')
+        } else {
+            //Register the ServiceWorker
+            navigator.serviceWorker.register('sw.js', {
+                scope: './'
+            }).then(function (reg) {
+                console.log('Service worker has been registered for scope:' + reg.scope);
+            });
+        }
+
+    </script>
 </head>
 
 <body>
